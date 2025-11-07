@@ -1,9 +1,3 @@
-Of course. Here is a README file formatted with GitHub-flavored Markdown. This version is more structured, includes sections for a GIF/screenshot, and uses code blocks for better readability, making it ideal for a GitHub repository.
-
-You can copy this content and paste it directly into the `README.md` file in your project.
-
----
-
 # Student Profile Viewer for Android
 
 A simple, single-activity Android application built with Kotlin that displays student profiles. Users can tap a button to cycle through a list of students, with each profile showing a picture, name, and a brief description.
