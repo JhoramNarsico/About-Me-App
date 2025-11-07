@@ -3,8 +3,6 @@
 A simple, single-activity Android application built with Kotlin that displays student profiles. Users can tap a button to cycle through a list of students, with each profile showing a picture, name, and a brief description.
 
 
-*(Replace the URL above with a link to your own screenshot or a GIF of the app in action)*
-
 ---
 
 ## 🚀 Features
