@@ -113,6 +113,4 @@ The app's logic will automatically adjust to the changes.
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
