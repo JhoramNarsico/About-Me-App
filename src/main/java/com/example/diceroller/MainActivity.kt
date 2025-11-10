@@ -6,10 +6,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
-/**
- * Data class to hold all information for a single student.
- * This ensures that the name, description, and image are always linked together.
- */
 data class Student(
     val name: String,
     val description: String,
@@ -18,8 +14,7 @@ data class Student(
 
 class MainActivity : AppCompatActivity() {
 
-    // A list to hold all our student objects.
-    // ADDED STUDENT 4 AND STUDENT 5 HERE
+
     private val studentList = listOf(
         Student(
             name = "Student 1",
@@ -79,9 +74,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * A helper function to update the UI elements with the current student's data.
-     */
     private fun updateProfile(profileImage: ImageView, nameText: TextView, aboutMeText: TextView) {
         // Get the student object at the current index.
         val currentStudent = studentList[currentIndex]
