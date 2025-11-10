@@ -6,6 +6,10 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
+/**
+ * Data class to hold all information for a single student.
+ * This ensures that the name, description, and image are always linked together.
+ */
 data class Student(
     val name: String,
     val description: String,
@@ -14,31 +18,31 @@ data class Student(
 
 class MainActivity : AppCompatActivity() {
 
-
+    // A list to hold all our student objects.
     private val studentList = listOf(
         Student(
             name = "Student 1",
-            description = "I like to watch movies and listen to music. I like to play single player and multiplayer games.",
+            description = "My name is Jhoram. I like to watch movies and listen to music. I like to play single player and multiplayer games.",
             imageResId = R.drawable.student1 // Replace with your actual image
         ),
         Student(
             name = "Student 2",
-            description = "This is the detailed description for Student 2. Their focus is on UI/UX design and creative arts.",
+            description = "My name is Jep and I love to play video games and DIY to everything.",
             imageResId = R.drawable.student2 // Replace with your actual image
         ),
         Student(
             name = "Student 3",
-            description = "This is the detailed description for Student 3. They are passionate about backend systems and databases.",
+            description = "Hello My Name is Jillian! One thing about me is I love orange cats \uD83D\uDC08 " ,
             imageResId = R.drawable.student3 // Replace with your actual image
         ),
         Student(
             name = "Student 4",
-            description = "This is the detailed description for Student 4. They specialize in cybersecurity and network infrastructure.",
+            description = "My name is Ram. Im hungry",
             imageResId = R.drawable.student4 // Replace with your actual image
         ),
         Student(
             name = "Student 5",
-            description = "This is the detailed description for Student 5. Their main interest is in data science and machine learning.",
+            description = "Hi! My Name is Clarice! I love matcha and dogs",
             imageResId = R.drawable.student5 // Replace with your actual image
         )
     )
@@ -74,6 +78,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * A helper function to update the UI elements with the current student's data.
+     */
     private fun updateProfile(profileImage: ImageView, nameText: TextView, aboutMeText: TextView) {
         // Get the student object at the current index.
         val currentStudent = studentList[currentIndex]
